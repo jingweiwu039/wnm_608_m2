@@ -1,0 +1,105 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('https://www.antimaximalist.com/wp-content/uploads/2020/01/Extreme-Minimalism-Can-It-Make-You-Happy.jpg') no-repeat center center fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contater {
+	font-family: 'Baskervville', serif;
+	font-size: 12pt;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	margin: 3em;
+	padding: 0;
+}
+
+.logo {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 260%;
+	color: black;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+
+}
+
+.logo a {
+	text-decoration: none;
+	color: black;
+}
+
+nav .nav-items {
+	font-size: 120%;
+	display: inline-block;
+}
+
+nav ul {
+	font-family: 'Baskervville', serif;
+	font-size: 14pt;
+	list-style: none;
+	display: flex;
+	margin-bottom: 5px;
+	padding: 5px;
+    
+}
+
+nav li {
+	margin-left: 4em;
+}
+
+nav li>a {
+	text-decoration: none;
+	color: black;
+}
+
+nav li>a:hover {
+	border-bottom: 1px solid grey;
+}
+.content {
+	padding-left: 15%;
+	padding-top: 22vh;
+
+}
+
+.slogan {
+	width: 25%;
+}
+
+
+.main_slogan {
+	font-family:'Kumbh Sans', sans-serif;
+	font-size: 80pt;
+	margin-left: 2%;
+	margin-bottom:8%;
+	text-align: center;
+}
+
+.slogan p{
+	font-size: 12pt;
+	font-family: 'Baskervville', serif;
+}
+
+
+footer {
+	font-family: 'Baskervville', serif;
+	color: black;
+	font-size: 10pt;
+	margin: 0;
+	text-align: center;
+	padding: 5px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+
+
+}

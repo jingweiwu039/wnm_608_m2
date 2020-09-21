@@ -1,0 +1,29 @@
+/* CSS RESET */
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-neutral-light: #eee;
+	--color-neutral-light: #999;
+	--color-neutral-light: #555;
+
+	--header-height: 3rem;
+	--spacing: 1rem;
+}
+
+body {
+	margin: 0;
+	font-size: 100%;
+	font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-serif);
+}
+
