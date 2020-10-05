@@ -1,29 +1,275 @@
+
 /* CSS RESET */
+
 *, *::after, *::before {
 	box-sizing: border-box;
 }
 
 :root {
 	--color-neutral-light: #eee;
-	--color-neutral-light: #999;
-	--color-neutral-light: #555;
+	--color-neutral-medium: #999;
+	--color-neutral-dark: #555;
+
+	
+	--color-main-light: #D4CBC7;
+	--color-main-medium: #C2B0A2;
+	--color-main-dark: #74746E; 
+
+
+	--color-black: #000;
+	--color-white: #fff;
+
+
+	--color-offwhite: #f4f4f4;
+
 
 	--header-height: 3rem;
 	--spacing: 1rem;
+
+
+	--font-serif: "Baskervville", serif;
+	--font-sans: "Kumbh Sans", sans-serif;
 }
 
-body {
+body{
 	margin: 0;
 	font-size: 100%;
 	font-family: var(--font-sans);
+	background-color: var(--color-offwhite);
 }
 
 h1,
 h2,
-h3,
+h3 {
+	font-family: Helvetica, sans-serif;
+}
 h4,
 h5,
 h6 {
+	font-family: var(--font-sans);
+}
+p {
 	font-family: var(--font-serif);
 }
 
+a {
+	color: inherit;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color:var(--color-main-medium);
+	text-decoration: underline;
+}
+
+
+
+/* LAYOUT CLASSES*/
+
+.container{
+	
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+.display-flex {display: flex;}
+.display-inline-flex {display: inline-flex;}
+.display-block {display: block;}
+.display-inline-block {display: inline-block;}
+
+.flex-stretch {flex: 1,1,auto;}
+.flex-none {flex: none;}
+
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-content: center;}
+
+
+/* SMALL CLASSES*/
+.media-image {
+	max-width: 100%;
+	vertical-align: text-bottom;
+}
+
+
+/* COMPONENT CLASSES */
+
+.nav ul{
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	font-family: var(--font-serif);
+	
+
+}
+
+.navbar{
+	background-color: var(--color-main-medium);
+	color: var(--color-white);
+	line-height: var(--header-height);
+}
+
+
+.navbar h1{
+	font-size: 1.5em;
+	margin: 0;
+	font-family: var(--font-sans);
+}
+
+
+
+
+.nav a{
+		display: block;
+		padding: 0.3em 0.5em;
+		text-decoration: none;
+	}
+
+
+.nav a:hover{
+		background-color: var(--color-main-medium);
+		color: var(--color-white);
+		text-decoration: none;
+	}
+
+.nav .active a{
+		background-color: var(--color-main-medium);
+		color: inherit;
+	}
+
+
+.nav-flex ul, .nav-stretch ul, .nav-pills ul, .nav-crumbs ul, .nav-material ul {
+	display: flex;
+}
+
+.nav-stretch li, .nav-material li {
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+.nav-pills a {
+	border-radius: 2em;
+	padding: 0.5em 1em;
+}
+
+.nav-crumbs a {
+	display: inline-block;
+}
+
+.nav-crumbs .active a, .nav-crumbs a:hover {
+	background-color: transparent;
+	color: inherit;
+	text-decoration: underline;
+}
+
+.nav-crumbs li:not(:first-child)::before {
+	content: '/';
+}
+
+.nav-material a {
+	padding: 0.5em 1em;
+	position: relative;
+}
+
+.nav-material .active a {
+	background-color: transparent;
+	color: inherit;
+}
+
+.nav-material a:hover {
+	background-color: var(--color-neutral-light);
+	color:inherit;
+}
+
+.nav-material a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: var(--color-main-medium);
+	transition: all 0.3s;
+}
+
+.nav-material .active a::after {
+	height: 4px;
+}
+
+/* CARD */
+
+.card{
+	background-color: var(--color-white);
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.card.soft{
+	border-radius: 0.5em;
+	/*font-size: 18pt;
+	padding:20px;*/
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+    .card.hard {
+    	border-radius: 0.2em;
+    	border:2px solid var(--color-neutral-medium);
+    }
+    .card.dark {
+    	background-color: var(--color-neutral-dark);
+    	color:var(--color-neutral-light);
+    }
+    .card.medium {
+    	background-color: var(--color-neutral-medium);
+    }
+    .card.flat {
+    	padding: 0;
+    }
+
+
+/* COLORS */
+
+
+.color1{
+	font-family: var(--font-sans);
+	font-weight: lighter;
+	font-size: 15pt;
+	padding:20px;
+	background-color: #F4EFEA;
+	border-radius: 0.2em;
+}
+.color2{
+	font-size: 15pt;
+	padding:20px;
+	background-color: #D4CBC7;
+	border-radius: 0.2em;
+}
+.color3{
+	font-size: 15pt;
+	padding:20px;
+	background-color: #C2B0A2;
+	border-radius: 0.2em;
+}
+.color4{
+	font-size: 15pt;
+	padding:20px;
+	background-color: #B4895C;
+	border-radius: 0.2em;
+}
+.color5{
+	background-color: #74746E;
+	font-size: 15pt;
+	padding:20px;
+	border-radius: 0.2em;
+}
