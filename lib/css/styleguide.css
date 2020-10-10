@@ -35,8 +35,7 @@ body{
 	margin: 0;
 	font-size: 100%;
 	font-family: var(--font-sans);
-	background-color: var(--color-offwhite);
-	
+	background-color: var(--color-offwhite);	
 }
 
 h1,
@@ -64,8 +63,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-
-
 /* LAYOUT CLASSES*/
 
 .container{
@@ -74,9 +71,6 @@ a:hover {
 	margin-right: auto;
 	margin-left: auto;
 }
-
-
-
 
 .display-flex {display: flex;}
 .display-inline-flex {display: inline-flex;}
@@ -108,7 +102,6 @@ a:hover {
 	padding-left: 0;
 	font-family: var(--font-serif);
 	
-
 }
 
 .navbar{
@@ -124,26 +117,22 @@ a:hover {
 	font-family: var(--font-sans);
 }
 
-
-
-
 .nav a{
 		display: block;
 		padding: 0.3em 0.5em;
 		text-decoration: none;
-	}
-
+}
 
 .nav a:hover{
 		background-color: var(--color-main-medium);
 		color: var(--color-white);
 		text-decoration: none;
-	}
+}
 
 .nav .active a{
 		background-color: var(--color-main-medium);
 		color: inherit;
-	}
+}
 
 
 .nav-flex ul, .nav-stretch ul, .nav-pills ul, .nav-crumbs ul, .nav-material ul {
@@ -206,7 +195,7 @@ a:hover {
 
 /* CARD */
 
-.card{
+.card {
 	background-color: var(--color-white);
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	margin-top: 1em;
@@ -214,64 +203,37 @@ a:hover {
 	padding: 1em;
 	overflow: hidden;
 	position: relative;
-
 }
 
-.card.soft{
+.card.soft {
 	border-radius: 0.5em;
 	/*font-size: 18pt;
 	padding:20px;*/
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-
-    .card.hard {
+.card.hard {
     	border-radius: 0.2em;
     	border:2px solid var(--color-neutral-medium);
-    }
-    .card.dark {
+}
+.card.dark {
     	background-color: var(--color-neutral-dark);
     	color:var(--color-neutral-light);
-    }
-    .card.medium {
+}
+.card.medium {
     	background-color: var(--color-neutral-medium);
-    }
-    .card.flat {
+}
+.card.flat {
     	padding: 0;
-    }
+}
 
 
 /* COLORS */
 
-
-.color1{
+.color-sample {
 	font-family: var(--font-sans);
+	font-size: 15pt;
 	font-weight: lighter;
-	font-size: 15pt;
-	padding:20px;
-	background-color: #F4EFEA;
-	border-radius: 0.2em;
-}
-.color2{
-	font-size: 15pt;
-	padding:20px;
-	background-color: #D4CBC7;
-	border-radius: 0.2em;
-}
-.color3{
-	font-size: 15pt;
-	padding:20px;
-	background-color: #C2B0A2;
-	border-radius: 0.2em;
-}
-.color4{
-	font-size: 15pt;
-	padding:20px;
-	background-color: #B4895C;
-	border-radius: 0.2em;
-}
-.color5{
-	background-color: #74746E;
 	font-size: 15pt;
 	padding:20px;
 	border-radius: 0.2em;
@@ -279,7 +241,6 @@ a:hover {
 
 
 /* Figure */
-
 
 .figure {
 	margin: 0;
@@ -294,18 +255,14 @@ a:hover {
 .figure figcaption {
 	padding: 1em;
 	font-family: var(--font-serif);
-
 	
 }
-
-
 
 .figure .product {
 	border-radius: 0.5em; 
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 }
-
 
 .product-overlay {
 	position: relative;
@@ -355,11 +312,9 @@ a:hover {
 }
 
 
-
 .product-overlay:hover img {
 	transform: scale(1.4,1.4);
 }
-
 
 
 @media (max-width: 600px) {
@@ -378,7 +333,6 @@ a:hover {
 		padding: 0;
 	}
 }
-
 
 /* Form */
 
@@ -422,10 +376,7 @@ a:hover {
 .form-input:focus {
 	border-bottom-color: 1px solid var(--color-neutral-medium);
 	transition: 0.5s;
-
 }
-
-
 
 .form-label {
 	font-size: 1em;
@@ -433,7 +384,6 @@ a:hover {
 	display: block;
 	width: 100%;
 }
-
 
 .form-button {
 	background-color: black;
@@ -481,8 +431,6 @@ a.form-button-s {
 }
 
 
-
-
 .hotdog {
 	background-color: var(--color-neutral-light);
 	font-size: 0.8em;
@@ -499,8 +447,6 @@ a.form-button-s {
 	display: flex;
 	border: 0px solid;
 	width: 50%;
-
-
 }
 
 .text-box:hover {
@@ -556,7 +502,6 @@ a.form-button-s {
 	transform: translateY(-50%);
 	pointer-events: none;
 	color: var(--color-neutral-medium);
-
 }
 
 .favorite label {
@@ -569,11 +514,7 @@ a.form-button-s {
 .favorite input:checked + label {
 	color: red;
 	transform: scale(1.5, 1.5);
-
 }
-
-
-
 
 /* Toggle */
 .toggle label {
@@ -587,8 +528,6 @@ a.form-button-s {
 	position: relative;
 }
 
-
-
 .toggle label::after {
 	content:"";
 	display: inline-block;
@@ -597,9 +536,8 @@ a.form-button-s {
 	position: absolute;
 	border-radius: 1em;
 	background-color: white;
-	transition: 0.3s;
+	transition: 0.5s;
 }
-
 
 .toggle input:checked + label {
 	background-color: var(--color-main-dark);
@@ -609,39 +547,8 @@ a.form-button-s {
 .toggle input:checked + label::after {
 	transform: translateX(1em);
 	background-color: white;
-
 }
 
 .toggle-button {
 		margin-left: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
