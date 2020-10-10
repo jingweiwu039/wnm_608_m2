@@ -63,6 +63,13 @@ a:hover {
 	text-decoration: underline;
 }
 
+
+ 
+#text-button:hover {
+	text-decoration:underline;
+	background-color: transparent;
+}   
+#text-button:active {text-decoration:none;}  
 /* LAYOUT CLASSES*/
 
 .container{
